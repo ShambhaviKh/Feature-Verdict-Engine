@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Feature Verdict Engine</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="page">
+
+    <header class="site-header">
+      <div class="brand">
+        <span class="brand-mark">✦</span>
+        <h1>Feature Verdict Engine</h1>
+      </div>
+      <p class="tagline">Pitch a feature. Get a PM-grade audit — verdict, scores, competitive read, and a metric that actually holds up.</p>
+    </header>
+
+    <section class="panel form-panel">
+      <form id="verdictForm">
+        <div class="field">
+          <label for="appName">App name</label>
+          <input type="text" id="appName" placeholder="e.g. Instagram" required />
+        </div>
+
+        <div class="field">
+          <label for="featureIdea">Feature idea</label>
+          <textarea id="featureIdea" rows="3" placeholder="e.g. Let users see who viewed their story without appearing in the viewer list" required></textarea>
+        </div>
+
+        <div class="field">
+          <label for="metric">Proposed success metric <span class="optional">(optional)</span></label>
+          <input type="text" id="metric" placeholder="e.g. Increase in story replies" />
+        </div>
+
+        <button type="submit" id="submitBtn">Run audit</button>
+      </form>
+    </section>
+
+    <section id="output" class="output">
+      <div class="empty-state">
+        <p>No audit run yet.</p>
+        <p class="muted">Fill in the form above and click <strong>Run audit</strong> to see a verdict.</p>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
